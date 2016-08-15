@@ -1,0 +1,22 @@
+<resources>
+    <!-- Application -->
+    <string name="app_name">YourFirstApp</string>
+
+    <!-- Main Activity -->
+
+    <string name="image_content_description">Hot-dog image</string>
+
+    <string name="food_item_name">Food item name</string>
+    <string name="food_item_name_hint">Type the food item name</string>
+
+    <string name="food_item_quantity">Food item quantity</string>
+    <string name="food_item_quantity_hint">Type the food item quantity</string>
+
+    <string name="ingredients">Ingredients</string>
+    <string name="choose_ingredient">Choose the ingredient</string>
+    <string name="ingredients_hint_first">Choose the first ingredient</string>
+    <string name="ingredients_hint_second">Choose the second ingredient</string>
+    <string name="ingredients_hint_third">Choose the third ingredient</string>
+
+    <string name="discount_allowed">Discount allowed</string>
+</resources>

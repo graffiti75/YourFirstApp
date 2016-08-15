@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="array_ingredients">
+        <item>Sausage</item>
+        <item>Bread</item>
+        <item>Mayo</item>
+        <item>Ketchup</item>
+        <item>Mustard</item>
+        <item>Bacon</item>
+        <item>Cheese</item>
+    </string-array>
+</resources>
