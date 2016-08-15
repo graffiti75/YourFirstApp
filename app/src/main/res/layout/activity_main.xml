@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <!-- Business Image and Name -->
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <!-- Food Item Image -->
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="match_parent"
@@ -17,103 +16,53 @@
             android:scaleType="fitXY"
             android:src="@drawable/hotdog" />
 
-        <!-- Food Item Name -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/black_transparent_70"
+            android:scaleType="fitXY" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/food_item_name"
-            android:textSize="12sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:hint="@string/food_item_name_hint"
-            android:textSize="16sp" />
-
-        <!-- Food Item Quantity -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/food_item_quantity"
-            android:textSize="12sp" />
+            android:text="@string/business_name"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:hint="@string/food_item_quantity_hint"
-            android:textSize="16sp" />
+    <!-- Business Description -->
 
-        <!-- Ingredients -->
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/business_description" />
 
-        <TextView
-            android:id="@+id/id_first_ingredient"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/ingredients"
-            android:textSize="12sp" />
+    <TextView
+        style="@style/ContentTextView"
+        android:text="@string/business_description_details" />
 
-        <TextView
-            android:id="@+id/id_second_ingredient"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="@string/ingredients_hint_first"
-            android:textSize="16sp" />
+    <!-- Business Address -->
 
-        <TextView
-            android:id="@+id/id_third_ingredient"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="@string/ingredients_hint_second"
-            android:textSize="16sp" />
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/business_address" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="@string/ingredients_hint_third"
-            android:textSize="16sp" />
+    <TextView
+        style="@style/ContentTextView"
+        android:text="@string/business_address_details" />
 
-        <!-- Discount Allowed -->
+    <!-- Business Phone -->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/discount_allowed"
-            android:textSize="12sp" />
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/business_phone" />
 
-        <android.support.v7.widget.SwitchCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:paddingLeft="10dp"
-            app:theme="@style/SwitchCompatStyle" />
-    </LinearLayout>
-</ScrollView>
+    <TextView
+        style="@style/ContentTextView"
+        android:text="@string/business_phone_details" />
+</LinearLayout>

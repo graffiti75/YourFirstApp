@@ -4,19 +4,16 @@
 
     <!-- Main Activity -->
 
-    <string name="image_content_description">Hot-dog image</string>
+    <string name="image_content_description">Hot Dog image</string>
 
-    <string name="food_item_name">Food item name</string>
-    <string name="food_item_name_hint">Type the food item name</string>
+    <string name="business_name">John Corner\nHot Dog</string>
 
-    <string name="food_item_quantity">Food item quantity</string>
-    <string name="food_item_quantity_hint">Type the food item quantity</string>
+    <string name="business_description">Business description</string>
+    <string name="business_description_details">John Corner Hot Dog is a place you can buy tasty Hot Dogs, in the corner of your house!</string>
 
-    <string name="ingredients">Ingredients</string>
-    <string name="choose_ingredient">Choose the ingredient</string>
-    <string name="ingredients_hint_first">Choose the first ingredient</string>
-    <string name="ingredients_hint_second">Choose the second ingredient</string>
-    <string name="ingredients_hint_third">Choose the third ingredient</string>
+    <string name="business_address">Business address</string>
+    <string name="business_address_details">1600 Amphitheatre Parkway, Mountain View, CA</string>
 
-    <string name="discount_allowed">Discount allowed</string>
+    <string name="business_phone">Business phone</string>
+    <string name="business_phone_details">+1 650-253-0000</string>
 </resources>
